@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta http-equiv="content-type" content="text/css" charset="utf-8">
+        <link rel="shortcut icon" href="Imagenes/logocarsa.gif" type="image/x-icon">
+        <link rel="stylesheet" href="Estilos.css" type="text/css" media="all">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <title>Catálogo</title>
+        <script type="text/javascript">
+            function validar () {
+                var busqueda = document.getElementById('buscar');
+                var correo = document.getElementsByName('correo');
+                var patron1= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                var patron2 = /[A-Za-z0-9]{1,}/;
+                verificar(patron2, busqueda)
+                verificar(patron1, correo)
+                console.log('cumple');
+            }
+        </script>
+
+    </head>
+    <body>
+        <nav class="container-fluid">
+            <figure class="col-md-2">
+                <img src="Imagenes/logo.gif">
+            </figure>
+            <div class="col-md-8">
+                <input class="modo1" id="buscar" type="search" placeholder="Buscar en Carsa:" onclick="validar()">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+            </div>
+            <div class="col-md-2">
+                <img class="corto" src="Imagenes/fb.jpg">
+                <img class="corto" src="Imagenes/tw.jpg">
+                <img class="corto" src="Imagenes/yt.jpg">
+            </div>
+        </nav>
+		<aside class="nav">
+            <ul class="container-fluid">
+                <li class="col-md-2"><a href="Index.html">Inicio</a></li>
+                <li class="col-md-2"><a href="">Tecnología</a>
+                    <ul>
+                        <li class="col-md-12"><a href="Smartphone.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="Refrigeradoras.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="Laptops.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li >
+                <li class="col-md-2"><a href="">Promociones</a>
+                    <ul>
+                        <li class="col-md-12"><a href="promociones3.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="promocion2.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="promoción1.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2"><a href="">Preventa</a>
+                    <ul>
+                        <li class="col-md-12"><a href="Smartphone.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="Refrigeradoras.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="Laptops.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2"><a href="">Electrohogar</a>
+                    <ul>
+                        <li class="col-md-12"><a href="cocinas.html">Cocinas</a></li>
+                        <li class="col-md-12"><a href="Lavadoras.html">Lavadoras</a></li>
+                        <li class="col-md-12"><a href="campanas.html">campanas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+		<article id="main" class="container-fluid">
+            <figure class="col-md-2">
+                <img class="min" src="Imagenes/atencion.png">
+                <img class="min" src="Imagenes/banner.png">
+                <img class="min" src="Imagenes/fbc.png">
+            </figure>
+            <figure class="col-md-10">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+             
+                    <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="Imagenes/Captura.PNG" alt="...">
+                                    
+                                </div>
+                                <div class="item">
+                                    <img src="Imagenes/Captura2.PNG" alt="...">
+                                    
+                                </div>
+                                <div class="item">
+                                    <img src="Imagenes/Captura3.PNG" alt="...">
+                          
+                                </div>
+                          </div>
+                    <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                     </div> <!-- Carousel -->
+            </figure>
+        </article>
+        <section>
+            <div class="container-fluid">
+                <div class="col-md-1">
+                    <img class="correo" src="Imagenes/correo.gif">
+                </div>
+                <div class="col-md-5">
+                    <strong>ENTÉRATE PRIMERO DE NUESTRAS PROMOCIONES</strong>
+                    <p>Ingresa tu email para recibir nuestras ofertas y promociones en tu bandeja.</p>
+                </div>
+                <div class="col-md-3">
+                    <input class="barra" id="correo" type="text" placeholder="e-mail:">
+                    <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-ok-circle"></span>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid">
+            <ul>
+                <li class="col-md-3">Teléfonos:
+                        <br>
+                        <p>Fijo 536-6969</p>
+                </li>
+                <li class="col-md-3">E-mail:
+                        <br>
+                        <p>tienda.comas@carsa.com.pe</p>
+                </li>
+                <li class="col-md-3">Dirección:
+                        <br>
+                        <p>Av. Tupac Amaru #1119 Km. 11-Comas</p>
+                </li>
+                <li class="col-md-3">Horario de Atención:
+                        <br>
+                        <p>Lunes a Domingo de 9:30 am a 10:00 pm.
+                </li>
+            </ul>
+        </footer>
+	</body>
+</html>

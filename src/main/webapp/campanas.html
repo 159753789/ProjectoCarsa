@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <link rel="shortcut icon" href="Imagenes/logocarsa.gif" type="image/x-icon">
+		<link rel="stylesheet" href="css/estilos.css" type="text/html" media="all">
+		<link rel="stylesheet" type="text/html" href="css/bootstrap.min.css">
+        <title>Catalogo de Electrodomesticos</title>
+        <script type="text/javascript">
+            function validar () {
+                var busqueda = document.getElementById('buscar');
+                var patron2 = /[A-Za-z0-9]{1,}/;
+                verificar(patron2, busqueda)
+                console.log('cumple');
+            }
+        </script>
+	</head>
+	<body>
+		<nav class="container-fluid">
+            <figure class="col-md-2">
+                <img src="Imagenes/logo.gif">
+            </figure>
+			<div class="col-md-8">
+				<input class="modo1" id="buscar" type="search" placeholder="Buscar en Carsa:">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+			</div>
+            <div class="col-md-2">
+                <a href="https://www.facebook.com" target="_blank"><img class="corto" src="Imagenes/fb.jpg"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="corto" src="Imagenes/tw.jpg"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="corto" src="Imagenes/yt.jpg"></a>
+		</nav>
+		<aside class="nav">
+            <ul class="container-fluid">
+                <li class="col-md-2"><a href="Index.html">Inicio</a></li>
+                <li class="col-md-2"><a href="">Tecnología</a>
+                    <ul>
+                        <li class="col-md-12"><a href="Smartphone.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="Refrigeradoras.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="Laptops.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li >
+                <li class="col-md-2"><a href="">Promociones</a>
+                    <ul>
+                        <li class="col-md-12"><a href="promociones3.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="promocion2.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="promoción1.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2"><a href="">Preventa</a>
+                    <ul>
+                        <li class="col-md-12"><a href="Smartphone.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="Refrigeradoras.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="Laptops.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2"><a href="">Electrohogar</a>
+                    <ul>
+                        <li class="col-md-12"><a href="cocinas.html">Cocinas</a></li>
+                        <li class="col-md-12"><a href="Lavadoras.html">Lavadoras</a></li>
+                        <li class="col-md-12"><a href="campanas.html">Campanas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <article id="sec" class="container-fluid">
+        	<figure class="col-md-4"><a href="campanas1.html">
+        		<img class="img3" src="Imagenes/campana1.jpg" width="100" >
+        		<figcaption><br>
+                    <cite>Llanos </cite><br>
+                    <strong>Modelo ISLA ARCUS TOUCH 90 27449</strong>
+                    <p>Función modo automático</p>
+                    <p>S/. 1500.00</p>
+                </figcaption>
+        	</a></figure>
+            <figure class="col-md-4"><a href="campanas2.html">
+                <img class="img3" src="Imagenes/campana2.jpg">
+                <figcaption>
+                    <br>
+                    <cite>Indurama</cite><br>
+                    <strong>Campana Extractora Decorativa Cei-90crvc</strong>
+                    <p>Tipo Chimenea CEI-90CRVC</p>
+                    <p>S/. 900.00</p>
+                </figcaption>
+            </a></figure>
+     	</article>
+        <footer class="container-fluid">
+            <ul>
+                <li class="col-md-3">Teléfonos:
+                        <br>
+                        <p>Fijo 536-6969</p>
+                </li>
+                <li class="col-md-3">E-mail:
+                        <br>
+                        <p>tienda.comas@carsa.com.pe</p>
+                </li>
+                <li class="col-md-3">Dirección:
+                        <br>
+                        <p>Av. Tupac Amaru #1119 Km. 11-Comas</p>
+                </li>
+                <li class="col-md-3">Horario de Atención:
+                        <br>
+                        <p>Lunes a Domingo de 9:30 am a 10:00 pm.
+                </li>
+            </ul>
+        </footer>
+   	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+		<link rel="stylesheet" href="Estilos.css" type="text/html" media="all">
+		<link rel="stylesheet" type="text/html" href="css/bootstrap.min.css">
+        <title>Catalogo de Electrodomesticos</title>
+		<script type="text/javascript">
+			function validar () {
+				var busqueda = document.getElementById('buscar');
+				var patron2 = /[A-Za-z0-9]{1,}/;
+				verificar(patron2, busqueda)
+				console.log('cumple');
+			}
+		</script>
+	</head>
+	<body>
+		<nav class="container-fluid">
+			<div class="col-md-8">
+				<br>
+				<input class="modo1" id="buscar" type="search" placeholder="Buscar:">
+			</div>
+			<div class="col-md-4"> 
+				<input class="modo1" type="text" placeholder="Usuario:">
+				<br>
+				<input id="boton1" class="btn btn-primary" type="button" value="Crear Cuenta"> 
+				<br>
+                <input class="modo1" type="password" placeholder="Clave:">
+			</div>
+		</nav>
+		<aside class="nav">
+			<ul class="container-fluid">
+				<li class="col-md-3"><a href="">Tecnologia</a>
+					<ul>
+						<li class="col-md-12"><a href="">Smartphones</a></li>
+						<li class="col-md-12"><a href="">Refrigeradoras</a></li>
+						<li class="col-md-12"><a href="">Laptops y Notebooks</a></li>
+					</ul>
+				</li >
+				<li class="col-md-3"><a href="">Promociones</a>
+					<ul>
+						<li class="col-md-12"><a href="">Smartphones</a></li>
+						<li class="col-md-12"><a href="">Refrigeradoras</a></li>
+						<li class="col-md-12"><a href="">Laptops y Notebooks</a></li>
+					</ul>
+				</li>
+				<li class="col-md-3"><a href="">Preventa</a>
+					<ul>
+						<li class="col-md-12"><a href="">Smartphones</a></li>
+						<li class="col-md-12"><a href="">Refrigeradoras</a></li>
+						<li class="col-md-12"><a href="">Laptops y Notebooks</a></li>
+					</ul>
+				</li>
+				<li class="col-md-3"><a href="">Producto</a>
+					<ul>
+						<li class="col-md-12"><a href="">Smartphones</a></li>
+						<li class="col-md-12"><a href="">Refrigeradoras</a></li>
+						<li class="col-md-12"><a href="">Laptops y Notebooks</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<article class="sec">
+			<section class="container-fluid">
+				<h1>SmartPhones</h1>
+				<a href="lgg3.html"><figure class="col-md-3">
+					<img  class="imag" src="Imagenes/lgg3.jpg">
+					<figcaption class="fig1">LG G3 D855</figcaption>
+				</figure></a>
+			</section>
+		</article>
+	</body>
+</html>

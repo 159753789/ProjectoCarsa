@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+        <link rel="shortcut icon" href="Imagenes/logocarsa.gif" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilos.css" type="text/html" media="all">
+        <link rel="stylesheet" type="text/html" href="css/bootstrap.min.css">
+        <title>Catalogo de Electrodomesticos</title>
+        <script type="text/javascript">
+            function validar () {
+                var busqueda = document.getElementById('buscar');
+                var patron2 = /[A-Za-z0-9]{1,}/;
+                verificar(patron2, busqueda)
+                console.log('cumple');
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="container-fluid">
+            <figure class="col-md-2">
+                <img src="Imagenes/logo.gif">
+            </figure>
+            <div class="col-md-8">
+                <input class="modo1" id="buscar" type="search" placeholder="Buscar en Carsa:">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+            </div>
+            <div class="col-md-2">
+                <a href="https://www.facebook.com" target="_blank"><img class="corto" src="Imagenes/fb.jpg"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="corto" src="Imagenes/tw.jpg"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="corto" src="Imagenes/yt.jpg"></a>
+        </nav>
+        <aside class="nav">
+            <ul class="container-fluid">
+                <li class="col-md-2"><a href="Index.html">Inicio</a></li>
+                <li class="col-md-2"><a href="">Tecnologia</a>
+                    <ul>
+                        <li class="col-md-12"><a href="Smartphone.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="Refrigeradoras.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="Laptops.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li >
+                <li class="col-md-2"><a href="">Promociones</a>
+                    <ul>
+                        <li class="col-md-12"><a href="promociones3.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="promocion2.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="promoción1.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2"><a href="">Preventa</a>
+                    <ul>
+                        <li class="col-md-12"><a href="Smartphone.html">Smartphones</a></li>
+                        <li class="col-md-12"><a href="Refrigeradoras.html">Refrigeradoras</a></li>
+                        <li class="col-md-12"><a href="Laptops.html">Laptops y Notebooks</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2"><a href="">Electrohogar</a>
+                    <ul>
+                        <li class="col-md-12"><a href="cocinas.html">Cocinas</a></li>
+                        <li class="col-md-12"><a href="Lavadoras.html">Lavadoras</a></li>
+                        <li class="col-md-12"><a href="campanas.html">campañas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+		<article id="sec2">
+			<h1>LG G3 D855</h1>
+			<div class="div1">
+				<figure>
+					<img class="img1" src="Imagenes/img1.png">
+				</figure>
+				<div class="textestilo1">
+					<p>La pantalla Quad HD del LG G3 cuenta con una 
+					<br>resolución de 2560 x 1440 pixeles por lo que tiene 538 
+					<br>dpi, haciendo que las imágenes se vean con la mayor 
+					<br>nitidez y los colores más vibrantes dentro de su 
+					<br>pantalla de 5,5 pulgadas.</p>
+				</div>
+			</div>
+			<div class="div1">
+				<figure>
+					<img class="img2" src="Imagenes/img2.png">
+				</figure>
+				<div class="textestilo2">
+					<p>La función OIS (estabilizador óptico de imágenes) 
+					<br>reduce la posibilidad de obtener una imagen borrosa,  
+					<br>combinada con el láser que mide la distancia del 
+					<br>objetivo, permite tomar fotos hasta de 13 MP con la 
+					<br>mayor nitidez incluso en condiciones oscuras</p>
+				</div>
+			</div>
+			<div class="div1">
+				<figure>
+					<img class="img1" src="Imagenes/img3.png">
+				</figure>
+				<div class="textestilo1">
+					<p>Con un diseño metálico liviano y el diseño de arco  
+					<br>flotante con bordes más delgados, podrás manejarlo 
+					<br>fácilmente hasta con una mano. </p>
+				</div>
+			</div>
+		</article>
+        <footer class="container-fluid">
+            <ul>
+                <li class="col-md-3">Teléfonos:
+                        <br>
+                        <p>Fijo 536-6969</p>
+                </li>
+                <li class="col-md-3">E-mail:
+                        <br>
+                        <p>tienda.comas@carsa.com.pe</p>
+                </li>
+                <li class="col-md-3">Dirección:
+                        <br>
+                        <p>Av. Tupac Amaru #1119 Km. 11-Comas</p>
+                </li>
+                <li class="col-md-3">Horario de Atención:
+                        <br>
+                        <p>Lunes a Domingo de 9:30 am a 10:00 pm.
+                </li>
+            </ul>
+        </footer>
+	</body>
+</html>
